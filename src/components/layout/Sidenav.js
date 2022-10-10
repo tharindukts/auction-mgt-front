@@ -29,7 +29,11 @@ function Sidenav({ color }) {
             <span className="label">Sign In</span>
           </NavLink>
         </Menu.Item>
-        
+        <Menu.Item key="7">
+          <NavLink to="/tropphy-mgt">
+            <span className="label">Manage Tropphies</span>
+          </NavLink>
+        </Menu.Item>
       </Menu>
       
     </>

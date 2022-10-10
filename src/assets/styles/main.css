@@ -2367,8 +2367,8 @@ body {
 }
 
 .ant-form-item-label > label {
-  font-weight: 400;
-  color: #c5bfbf;
+  font-weight: 400!important;
+  color: #c5bfbf!important;
 }
 
 .text-dark {
@@ -2932,7 +2932,9 @@ section.ant-layout.ant-layout-has-sider.layout-dashboard.layout-profile
   color: #8c8c8c;
   margin-bottom: 0;
 }
-
+.ant-card-head-title{
+  color: #ffffff !important;
+}
 .card-profile-head .ant-card-head .avatar-info h4 {
   font-size: 24px;
 }
