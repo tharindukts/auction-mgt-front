@@ -7,10 +7,10 @@ import TrophyDataSectionComp from "./TrophyDataSectionComp";
 import MatchDetailSectionComp from "./MatchDetailSectionComp";
 
 export default function TroppyMgt() {
-    const [{isModalVisible, selectedRecReservationId}, setReDetailModalVisible] = useState(
+    const [{isModalVisible, trophyId}, setTrophyDetailModalVisible] = useState(
         {isModalVisible: false, trophyId: ""});
     const setModalVisible = (trophyId) => {
-        setReDetailModalVisible({isModalVisible: true, trophyId: trophyId})
+        setTrophyDetailModalVisible({isModalVisible: true, trophyId: trophyId})
     }
 
     const troppyData = [
@@ -98,8 +98,8 @@ export default function TroppyMgt() {
                            maskClosable={false}
                            visible={isModalVisible}
                            onCancel={() =>
-                               setReDetailModalVisible(
-                                   {isModalVisible: false, selectedRecReservationId: ""})}
+                               setTrophyDetailModalVisible(
+                                   {isModalVisible: false, trophyId: ""})}
                            destroyOnClose={true}
                            footer={null}
                            width={1000}>
